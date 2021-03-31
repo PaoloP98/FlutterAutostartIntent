@@ -21,7 +21,7 @@ To use this plugin add the dependency to your package's pubspec.yaml file:
 ```
 autostart:
     git:
-      url: git://github.com/PaoloP98/AndroidAutostartIntent
+      url: git://github.com/PaoloP98/FlutterAutostartIntent
 ```
 
 Or clone this repository and put it in a project folder e.g. "plugins".
