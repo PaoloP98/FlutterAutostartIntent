@@ -24,7 +24,7 @@ autostart:
       url: git://github.com/PaoloP98/FlutterAutostartIntent
 ```
 
-Or clone this repository and put it in a project folder e.g. "plugins".
+Or clone this repository and put it in a project folder e.g. "plugins". Then, add the dependency to your package's pubspec.yaml file:
 
 ```
 autostart:
