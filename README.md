@@ -14,7 +14,7 @@ The intents is currently launched for these manufacturers:
 - Letv
 - honor
 
-Personally I tested only on xiaomi because I don't have the other devices. ping me if you try it on other Android devices
+**Personally I tested only on xiaomi because I don't have the other devices. ping me if you try it on other Android devices**
 
 To use this plugin add the dependency to your package's pubspec.yaml file:
 
