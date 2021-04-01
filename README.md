@@ -6,7 +6,7 @@ Some manufacturers (for battery saving purposes) do not allow the app to run in 
 
 Intents have been retrieved from this stackoverflow answer: https://stackoverflow.com/a/48945679/15328543
 
-The intent is currently launched for these manufacturers:
+The intents is currently launched for these manufacturers:
 
 - xiaomi ✔
 - oppo
