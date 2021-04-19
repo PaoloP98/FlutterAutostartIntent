@@ -11,6 +11,7 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
+  String? _manufacturer;
   @override
   void initState() {
     super.initState();
@@ -24,11 +25,29 @@ class _MyAppState extends State<MyApp> {
           title: const Text('Plugin example app'),
         ),
         body: Center(
-          child: ElevatedButton(
-            onPressed: () {
-              Autostart.addAutoStartup();
-            },
-            child: Text("Launch intent"),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              ElevatedButton(
+                onPressed: () {
+                  Autostart.addAutoStartup();
+                },
+                child: Text("Launch intent"),
+              ),
+              ElevatedButton(
+                onPressed: () async {
+                  final manufacturer = await Autostart.getManufacturer;
+                  setState(() {
+                    _manufacturer = manufacturer;
+                  });
+                },
+                child: Text("Get Manufacturer"),
+              ),
+              SizedBox(
+                height: 50,
+              ),
+              if (_manufacturer != null) Text(_manufacturer!)
+            ],
           ),
         ),
       ),
