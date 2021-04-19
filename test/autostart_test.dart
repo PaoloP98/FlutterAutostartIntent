@@ -18,6 +18,6 @@ void main() {
   });
 
   test('getPlatformVersion', () async {
-    expect(await Autostart.platformVersion, '42');
+    expect(await Autostart.getManufacturer, 'Xiaomi');
   });
 }
